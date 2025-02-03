@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ruuf Solar</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__imagen">
+            <img src="./img/ruuf.png" alt="Logo_ruuf" class="container__logo-ruuf" />
+        </div>
+    
+        <h2> ¿Cuantos paneles caben en tu techo?</h2>
+
+
+        <!-- Contenedor de inputs, caso rectangular -->
+        <div id="inputs-container" >
+            <label for="altoTecho">Largo del techo (m):</label>
+            <input type="text" id="altoTecho" min="0" step="any">
+    
+            <label for="anchoTecho">Ancho del techo (m):</label>
+            <input type="text" id="anchoTecho" min="0" step="any">
+            <!-- Contenedor de inputs, paneles -->
+            <label for="altoPanel">Alto del panel (m):</label>
+            <input type="text" id="altoPanel" min="0" step="any">
+            
+            <label for="anchoPanel">Ancho del panel (m):</label>
+            <input type="text" id="anchoPanel" min="0" step="any">
+            <!-- Botón de calcular -->
+            <button id="calcularRectangular" onclick="calcularPaneles();">Calcular</button>
+        </div>
+
+            <!-- Resultado -->
+        <p id="resultado" style="display: none;"></p>
+            <!-- Botón de Nuevo Cálculo -->
+        <button id="nuevo-calculo" style="display: none;" onclick="reiniciarCalculo();">Realizar nuevo cálculo</button>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
