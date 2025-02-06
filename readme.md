@@ -1,1 +1,4 @@
-<h1> Portal del desafío<h1>
+<h1> Desafío Ruuf: ¿Cuántos paneles caben en el techo?</h1>
+
+
+- Estado del desafío: En construcción
